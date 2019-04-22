@@ -91,12 +91,14 @@ hr {
   margin-bottom: 20px;
 }
 .bio{
-  font-size: 15px;
+  /* font-size: 15px; */
   text-align: center;
 }
 
 .bio-section{
   height: 100vh;
+  width: 100vw;
+  word-wrap: break-word;
 }
 
 .logo {
@@ -435,4 +437,16 @@ opacity: 0;
 -o-transform: rotateY(0deg);
 transform: rotateY(0deg);
 opacity: 1;
+}
+
+#feat_proj-mobile {display: none;}
+
+
+@media screen and (max-width: 768px) {
+
+  #feat_proj-desktop {display: none;}
+  #feat_proj-mobile {display: block;}
+
+
+
 }
