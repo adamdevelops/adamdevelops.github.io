@@ -11,6 +11,7 @@ html,body
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
+    overflow-x: hidden;
 }
 
 body {
@@ -19,12 +20,20 @@ body {
     scroll-behavior: smooth;
 }
 
+.text-right{}
+
+.name{}
+
+.link{
+  margin  -bottom: 10px;
+}
+
 header {
     height: 100vh;
     margin-bottom: 10px;
     background: url("../img/splashscreen.jpg") no-repeat center center;
     background-size: cover;
-    display: flex;
+    display: fixed;
     flex-direction: column;
 }
 
@@ -32,6 +41,7 @@ header {
   padding-right: 110px;
   padding-left: 220px;
   color: #40E0D0;
+  z-index: 3;
 }
 
 
@@ -43,6 +53,34 @@ header {
 
 .typing-text{
   color: #40E0D0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.typewriter h1{
+  overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 1.3s steps(10, end), blink-caret .75s steps(50, end) infinite;
+}
+
+.typewriter{
+  display: inline-flex;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
 }
 
 hr {
@@ -58,12 +96,14 @@ hr {
   margin-bottom: 20px;
 }
 .bio{
-  font-size: 15px;
+  /* font-size: 15px; */
   text-align: center;
 }
 
 .bio-section{
   height: 100vh;
+  width: 100vw;
+  word-wrap: break-word;
 }
 
 .logo {
@@ -79,6 +119,7 @@ hr {
 .feat_thumbnail {
     display: block;
     min-width: 100%;
+    max-width: 100%;
     height: 200px;
     /*object-fit: scale-down;*/
     border-radius: 5px;
@@ -87,6 +128,7 @@ hr {
 .featuredprojects{
   background-image: url("../img/coding.jpg");
   height: 100vh;
+  width: 100vw;
   color: #40E0D0;
 
 }
@@ -185,7 +227,9 @@ hr {
   padding-top: 300px;
   height: 100vh;
   width: 100vw;
-  background-color: #40E0D0;
+  /* background-color: #40E0D0; */
+  background-color: #fafaf6; /* #fafaf6 */
+
   overflow: hidden;
 }
 
@@ -205,34 +249,102 @@ footer {
   flex-direction: column;
 }
 
+.videosplash{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* margin: 0 !important; */
+  overflow-y: hidden;
+  position: relative;
+}
 
+.video_overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #225470;
+  z-index: 2;
+  opacity: .85;
+  /* margin: 0 !important; */
+  overflow-x: hidden;
+}
 
+.video_text{
+  top: 50%;
+  left: 40%;
+}
+
+video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 10%;
+  background: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  /* min-width: 100%;
+  min-height: 100%; */
+  width: 100%;
+  z-index: 1;
+
+}
 
 
 /*     Card Flip Styling    */
-.card{
-  margin: 20px;
-  background: #5677fc;
-  width: 200px;
-  height: 200px;
-  transition: all 0.6s ease;
-  transition: all 2s ease;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 25px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 25px;
 }
 
-.card:active{
-  transform: rotateX(180deg);
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.card:hover{
-  transform: rotateX(180deg);
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
 }
 
-.card-container{
-  perspective: 600;
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
-/*     end of Card    still testing ---  */
 
+.card_preview{
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 .unstyled-button{
   background: none transparent;
@@ -268,11 +380,11 @@ p a {
 }
 
 .contact-button {
-  color: #fff;
+  color: #337ab7;
   font-family: Monoton;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate; */
 }
 
 @-webkit-keyframes neon1 {
@@ -361,4 +473,14 @@ opacity: 0;
 -o-transform: rotateY(0deg);
 transform: rotateY(0deg);
 opacity: 1;
+}
+
+#feat_proj-mobile {display: none;}
+
+
+@media screen and (max-width: 768px) {
+
+  #feat_proj-desktop {display: none;}
+  #feat_proj-mobile {display: block;}
+
 }
