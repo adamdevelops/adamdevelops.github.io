@@ -11,6 +11,7 @@ html,body
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +23,10 @@ body {
 .text-right{}
 
 .name{}
+
+.link{
+  margin-bottom: 10px;
+}
 
 header {
     height: 100vh;
@@ -123,6 +128,7 @@ hr {
 .featuredprojects{
   background-image: url("../img/coding.jpg");
   height: 100vh;
+  width: 100vw;
   color: #40E0D0;
 
 }
@@ -286,29 +292,59 @@ video{
 
 
 /*     Card Flip Styling    */
-.card{
-  margin: 20px;
-  background: #5677fc;
-  width: 200px;
-  height: 200px;
-  transition: all 0.6s ease;
-  transition: all 2s ease;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 25px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 25px;
 }
 
-.card:active{
-  transform: rotateX(180deg);
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.card:hover{
-  transform: rotateX(180deg);
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
 }
 
-.card-container{
-  perspective: 600;
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
-/*     end of Card    still testing ---  */
 
+.card_preview{
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 .unstyled-button{
   background: none transparent;
@@ -344,7 +380,7 @@ p a {
 }
 
 .contact-button {
-  color: #40E0D0;
+  color: #337ab7;
   font-family: Monoton;
   /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -446,7 +482,5 @@ opacity: 1;
 
   #feat_proj-desktop {display: none;}
   #feat_proj-mobile {display: block;}
-
-
 
 }
