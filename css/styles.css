@@ -29,6 +29,7 @@ body {
 }
 
 .link{
+  color: orange;
 }
 
 header {
@@ -395,6 +396,14 @@ video{
   color: black;
 }
 
+.contact-button {
+  color: #40E0D0;
+  font-family: Monoton;
+  /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate; */
+}
+
 .icon{
   padding-right: 30px;
   padding-bottom: 30px;
@@ -415,13 +424,7 @@ video{
   animation: neon1 1.5s ease-in-out infinite alternate;
 } */
 
-.contact-button {
-  color: #337ab7;
-  font-family: Monoton;
-  /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate; */
-}
+
 
 @-webkit-keyframes neon1 {
   from {
