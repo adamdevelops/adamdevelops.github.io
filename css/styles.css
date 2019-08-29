@@ -86,17 +86,33 @@ header {
   50% { border-color: black; }
 }
 
+.skils_section{
+  margin-top: 0 !important;
+}
+
+.skills_icon{
+  width: 75px;
+  height: 75px;
+}
+
 hr {
-	height: 30px;
+	height: 10px;
 }
 
 .school_proj{
-  /* padding: 130px; */
+  padding-left: 50px;
 }
 
 .arrow{
   text-align: center;
+  font-size: .5em;
+
 }
+
+.arrow a{
+  color: #40E0D0;
+}
+
 .bio{
   /* font-size: 15px; */
   text-align: center;
@@ -111,7 +127,7 @@ hr {
 }
 
 .bio-story{
-
+  font-size: 1.3rem;
 }
 
 .logo {
@@ -246,9 +262,11 @@ hr {
 footer {
     /* margin-right: 10px;
     margin-left: 10px; */
+    bottom: 0;
     text-align: center;
     background-color: #337ab7;
     color: black;
+    height: 50px;
 }
 
 footer a{
@@ -382,20 +400,20 @@ video{
   padding-bottom: 30px;
 }
 
-a {
+/* a {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-}
+} */
 
-p a {
+/* p a {
   color: #fff;
   font-family: Monoton;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
-}
+} */
 
 .contact-button {
   color: #337ab7;
