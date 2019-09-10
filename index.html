@@ -112,8 +112,8 @@
               </div>
           </div>
 
-          <div class="row">
-            <h3 class="skils_section">Skills</h3>
+          <div class="row skils_section">
+            <h3 class="skils_section_header">Skills</h3>
             <div class="col-md-4">
               <h4>Languages:</h4>
               <img src="img/HTML5_Logo.png" class="skills_icon">
@@ -386,7 +386,7 @@
       <div class="contact" id="contact">
 
 
-          <button id="contact_button" class="unstyled-button contact-button" data-modal-type="modal-8" >Contact</button>
+          <button id="contact_button" class="unstyled-button contact-button" data-toggle="modal" data-target="#contactModal" href="#" >Contact</button>
           <!-- <button class="modal2-button" data-modal-type="modal-8">3D Flip (horizontal)</button> -->
 
       </div>
@@ -570,27 +570,24 @@
 
         <!-------------------------------------------------------------------------------------------->
                 <!-- Contact me section  -->
-                <!-- for centering transform -->
-                <div class="effeckt-modal-wrap md-effect-8" id="effeckt-modal-wrap">
-                   <div class="effeckt-modal" id="effeckt-modal">
-                     <h3>Contact Me!</h3>
-                     <div class="effeckt-modal-content">
-                       <p>Feel to reach me at:</p>
-                       <p>adamh93@verizon.net</p>
+                 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+                     <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                             <div class="modal-header contact-modal">
+                                <h4 class="modal-title" id="contactModalLabel">Contact Info</h5>
+                             </div>
+                             <div class="modal-body">
+                               <p>Feel to reach me at:</p>
+                               <p>adamh93@verizon.net</p>
+                               </div>
+                             <div class="modal-footer contact-modal">
+                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             </div>
+                         </div>
                      </div>
-                   </div>
                  </div>
-                 <div class="effeckt-overlay" id="effeckt-overlay"></div>
-                 <!-- overlay coming after is important for ~ selector -->
-                 <div class="effeckt-overlay no-transitions" id="effeckt-overlay"></div>
 
-                 <!-------------------------------------------------------------------------------------------->
 
-                    <!-- <div class="row hr-line">
-                        <div class="col-md-12">
-                            <hr style="height: 20px">
-                        </div>
-                    </div> -->
 
                     <!-- Social Media Contact Info -->
 

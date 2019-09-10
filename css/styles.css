@@ -87,7 +87,7 @@ header {
   50% { border-color: black; }
 }
 
-.skils_section{
+.skills_section_header{
   margin-top: 0 !important;
 }
 
@@ -258,6 +258,15 @@ hr {
   overflow: hidden;
 }
 
+.contact-modal{
+  background-color: #40E0D0;
+}
+
+.modal-content{
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
+}
 
 
 footer {
