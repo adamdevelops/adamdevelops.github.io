@@ -103,14 +103,25 @@ hr {
     max-height: 800px;
 }
 
+.project{
+  margin-left: 10%;
+}
+
+.project-title{
+  padding-left: 5%;
+}
+
 .feat_thumbnail {
-    display: block;
-    /* min-width: 100%; */
-    width: 100px !important;
+    width: 300px !important;
     height: 150px;
+    min-width: inherit !important;
     /*object-fit: scale-down;*/
     border-radius: 5px;
+    align-items: center !important;
+    /* margin-left: 10%; */
 }
+
+
 
 .featuredprojects{
   background-image: url("../img/coding.jpg");
@@ -119,6 +130,10 @@ hr {
   color: #40E0D0;
   overflow-x: hidden !important;
   margin: 0 !important;
+}
+
+#feat_proj-mobile{
+  width: 100%;
 }
 
 .skills_section{
