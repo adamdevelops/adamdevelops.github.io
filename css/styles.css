@@ -22,8 +22,6 @@ body {
 
 .text-right{}
 
-.name{}
-
 .proj-row{
   padding-bottom: 20px;
 }
@@ -42,10 +40,11 @@ header {
 }
 
 .header-container{
-  padding-right: 110px;
-  padding-left: 220px;
   color: #40E0D0;
   z-index: 3;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3%;
 }
 
 
