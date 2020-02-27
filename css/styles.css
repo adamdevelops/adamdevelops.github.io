@@ -42,7 +42,8 @@ header {
     background-size: cover;
     display: fixed;
     flex-direction: column;
-} 
+    font-family: sans-serif;
+}
 
 .header-container{
   color: #FBFAF2;
