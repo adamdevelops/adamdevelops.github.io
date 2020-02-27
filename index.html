@@ -23,46 +23,43 @@
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 70%;
-            margin: auto;
-        }
-        </style>
     </head>
     <body>
 
         <!-- Container for the entire web page -->
 
 
-            <!-- Header of the portfolio-->
-            <header>
-              <div class="header-container ">
+        <header class="videosplash">
+          <video poster="../img/splashscreen.jpg" autoplay="true" loop>
+            <source src="img/grouptyping.mp4" type="video/mp4">
+          </video>
+
+          <div class="header-container">
+            <div class="video_text">
+              <div>
+                <div><img class="logo" src="img/icecream-htmlninja.png" alt="HTML ninja logo" /></div>
                 <div>
-                  <div><img class="logo" src="img/icecream-htmlninja.png" alt="HTML ninja logo" /></div>
-                  <div>
-                    <h1>Adam Hussain</h1>
-                    <h3>Full Stack Developer/Shinobi</h3>
-                  </div>
+                  <h1>Adam Hussain</h1>
+                  <h3>Full Stack Developer/Shinobi</h3>
+                </div>
+                <div class="typewriter">
+                  <h1 class="">
+                    adamdevelops
+                  </h1>
                 </div>
               </div>
 
-              <!-- Typing intro -->
-              <div class="header-marker">
-                  <div class="typewriter">
-                    <h1 class="">
-                      adamdevelops
-                    </h1>
-                  </div>
+              <div class="header-marker col-md-12">
                   <div id="snap" class="bounce arrow">
                     <a href="#bio-sec">
                       <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
                     </a>
                   </div>
               </div>
-            </header>
+            </div>
+          </div>
 
+        </header>
 
 
 
@@ -266,6 +263,39 @@
           <button id="contact_button" class="unstyled-button contact-button" data-toggle="modal" data-target="#contactModal" href="#" >Contact</button>
       </div>
 
+              <!-- Contact me modal  -->
+               <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header contact-modal">
+                              <h4 class="modal-title" id="contactModalLabel">Contact Info</h5>
+                           </div>
+                           <div class="modal-body">
+                             <p>For any queries or project proposals, <br /> Feel free to reach me at:</p>
+                             <p>adamh93@verizon.net</p>
+                             </div>
+                           <div class="modal-footer contact-modal">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+
+
+                  <!-- Social Media Contact Info -->
+
+                  <footer>
+
+                          <i class="fa fa-github fa-lg footer icon" aria-hidden="true"><a href="https://github.com/adamdevelops">
+                              GitHub</a></i>
+                          <i class="fa fa-facebook-square fa-lg footer icon" aria-hidden="true"><a href="https://www.facebook.com/f2dwd">
+                              Facebook</a></i>
+                          <i class="fa fa-linkedin-square fa-lg footer icon" aria-hidden="true"><a href="https://www.linkedin.com/in/adamdevelops/"> LinkedIn</a></i>
+                          <i class="fa fa-laptop fa-lg footer" aria-hidden="true"><a href="http://adamdevelops.blogspot.com/">My Blog</a></i>
+
+                  </footer>
+
         <!-- Pop up Modals for each of the Carousel Projects -->
 
         <!-- CityTech Credit Tracker App Modal -->
@@ -442,39 +472,7 @@
             </div>
         </div>
 
-        <!-------------------------------------------------------------------------------------------->
-                <!-- Contact me section  -->
-                 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
-                     <div class="modal-dialog" role="document">
-                         <div class="modal-content">
-                             <div class="modal-header contact-modal">
-                                <h4 class="modal-title" id="contactModalLabel">Contact Info</h5>
-                             </div>
-                             <div class="modal-body">
-                               <p>Feel to reach me at:</p>
-                               <p>adamh93@verizon.net</p>
-                               </div>
-                             <div class="modal-footer contact-modal">
-                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
 
-
-
-                    <!-- Social Media Contact Info -->
-
-                    <footer>
-
-                            <i class="fa fa-github fa-lg footer icon" aria-hidden="true"><a href="https://github.com/adamdevelops">
-                                GitHub</a></i>
-                            <i class="fa fa-facebook-square fa-lg footer icon" aria-hidden="true"><a href="https://www.facebook.com/f2dwd">
-                                Facebook</a></i>
-                            <i class="fa fa-linkedin-square fa-lg footer icon" aria-hidden="true"><a href="https://www.linkedin.com/in/adamdevelops/"> LinkedIn</a></i>
-                            <i class="fa fa-laptop fa-lg footer" aria-hidden="true"><a href="http://adamdevelops.blogspot.com/">My Blog</a></i>
-
-                    </footer>
 
 
 
