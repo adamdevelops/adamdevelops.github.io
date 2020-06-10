@@ -15,9 +15,13 @@ html,body
 }
 
 body {
-    background-color: #10282D; /* #fafaf6 */
+    background-color: #9BC995; /* #fafaf6 */
     color: black;
     scroll-behavior: smooth;
+}
+
+.heading{
+  font-family: 'Bebas Neue', cursive;
 }
 
 .text-right{}
@@ -42,7 +46,7 @@ header {
     background-size: cover;
     display: fixed;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .header-container{
@@ -126,9 +130,14 @@ hr {
   color: #FBFAF2;
 }
 
+.bio-heading{
+  font-family: 'Bebas Neue', cursive;
+}
+
 .bio-story{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: left;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .headshot-area{
@@ -146,7 +155,7 @@ hr {
 }
 
 .skills_section{
-  background-color: #2E9F89;
+  background-color: #9BC995;
   border-radius: 10px;
   margin: 10px;
 }
@@ -183,8 +192,9 @@ hr {
   /* background-image: url("../img/coding.jpg"); */
   height: 100vh;
   width: 100vw;
-  background-color: #10282D;
+  background-color: #9BC995;
   color: #FBFAF2;
+  padding-left: 20px;
 }
 
 
@@ -195,7 +205,7 @@ hr {
   width: 100vw;
   font-size: 7em;
   /* background-color: #40E0D0; */
-  background-color: #10282D; /* #fafaf6 */
+  background-color: #9BC995; /* #fafaf6 */
 
   overflow: hidden;
 }
@@ -207,7 +217,7 @@ hr {
 
 .contact-button {
   color: #FBFAF2;
-  font-family: Monoton;
+  font-family: 'Bebas Neue', cursive;
   /* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate; */
@@ -225,13 +235,17 @@ footer {
     margin-left: 10px; */
     bottom: 0;
     text-align: center;
-    background-color: #10282D;
+    background-color: #9BC995;
     color: #FBFAF2;
     height: 50px;
 }
 
 footer a{
-  color: #2E9F89;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2rem;
+  padding-left: 5px;
+  margin-right: 10px;
 }
 
 .hr-line{
@@ -312,7 +326,7 @@ footer a{
 
 
 .icon{
-  padding-right: 30px;
+  margin-right: 10px;
   padding-bottom: 30px;
 }
 
