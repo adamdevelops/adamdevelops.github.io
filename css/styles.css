@@ -140,6 +140,15 @@ hr {
   font-family: 'Exo 2', sans-serif;
 }
 
+.skills{
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2);
+  font-size: 2.5rem;
+  font-family: 'Exo 2', sans-serif;
+  list-style-type: none;
+}
+
 .headshot-area{
   display: flex;
   margin-top: 30px;
@@ -154,19 +163,9 @@ hr {
   border-radius: 50%;
 }
 
-.skills_section{
-  background-color: #9BC995;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.skills_section_header{
-  margin-top: 0 !important;
-}
-
 .skills_icon{
-  width: 75px;
-  height: 75px;
+  width: 125px;
+  height: 125px;
 }
 
 .logo {
@@ -463,5 +462,7 @@ video{
 
   #feat_proj-desktop {display: none;}
   #feat_proj-mobile {display: block;}
+
+  .project{margin: 0;}
 
 }

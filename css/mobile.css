@@ -14,9 +14,10 @@ html,body
 }
 
 body {
-    background-color: #fafaf6; /* #fafaf6 */
+    background-color: #9BC995; /* #fafaf6 */
     color: black;
     scroll-behavior: smooth;
+    font-family: 'Exo 2', sans-serif;
 }
 
 header {
@@ -94,7 +95,6 @@ hr {
 }
 .bio{
   font-size: 15px;
-  color: black;
   text-align: center;
 }
 
@@ -132,11 +132,9 @@ hr {
     max-height: 800px;
 }
 
-.project{
-  margin-left: 10%;
-}
 
 .project-title{
+  margin: 10px;
   padding-left: 5%;
 }
 
@@ -153,10 +151,8 @@ hr {
 
 
 .featuredprojects{
-  background-image: url("../img/coding.jpg");
   height: 100vh;
   width: 100vw;
-  color: #40E0D0;
   margin: 0 !important;
   padding-left: 20px;
   overflow-x: hidden;
@@ -175,36 +171,12 @@ hr {
   margin-top: 20px !important;
 }
 
-.contact{
-  text-align: center;
-  padding-top: 300px;
-  height: 100vh;
-  width: 100vw;
-  /* background-color: #40E0D0; */
-  background-color: #fafaf6; /* #fafaf6 */
-  overflow: hidden;
-}
-
-.contact-button{
-  color: #40E0D0;
-}
 
 .contact-modal{
   background-color: #40E0D0;
 }
 
-footer {
-  bottom: 0;
-  padding-bottom: 0 !important;
-  width: 100vw;
-  text-align: center;
-  background-color: inherit;
-  color: black;
-}
 
-footer a{
-  color: #40E0D0;
-}
 
 
 .bio-contact{
@@ -215,46 +187,13 @@ footer a{
   flex-direction: column;
 }
 
-
-
-
-/*     Card Flip Styling    */
-.card{
-  margin: 20px;
-  background: #5677FC;
-  width: 200px;
-  height: 200px;
-  transition: all 0.6s ease;
-  transition: all 2s ease;
-  transform-style: preserve-3d;
-}
-
-.card:active{
-  transform: rotateX(180deg);
-}
-
-.card:hover{
-  transform: rotateX(180deg);
-}
-
-.card-container{
-  perspective: 600;
-}
-/*     end of Card    still testing ---  */
-
-
 .unstyled-button{
   background: none transparent;
   border: none;
 }
 
 /*Neon*/
-.contact {
-  text-align: center;
-  font-size: 7em;
-  /* margin: 20px 0 20px 0; */
-  color: black;
-}
+
 
 .icon{
   padding-right: 30px;
