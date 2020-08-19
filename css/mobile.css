@@ -156,11 +156,12 @@ hr {
   margin: 0 !important;
   padding-left: 20px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #feat_proj-mobile{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .skills_section{
@@ -173,7 +174,7 @@ hr {
 
 
 .contact-modal{
-  background-color: #40E0D0;
+  background-color: #9BC995;
 }
 
 
