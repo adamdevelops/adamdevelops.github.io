@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adam H's Portfolio</title>
+        <!-- Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
+        <!--Custom CSS files-->
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="flippingmodal.css">
+
+        <!-- App CSS files -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="stylesheet" media="screen and (max-width:450px)" href="css/mobile.css">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    </head>
+    <body>
+        <!-- Container for the entire web page -->
+
+        <header class="videosplash">
+          <video poster="../img/splashscreen.jpg" autoplay="true" loop>
+            <source src="img/grouptyping.mp4" type="video/mp4">
+          </video>
+
+          <div class="header-container">
+            <div class="video_text">
+              <div>
+                <div><img class="logo" src="img/icecream-htmlninja.png" alt="HTML ninja logo" /></div>
+                <div>
+                  <h1 >Adam Hussain</h1>
+                  <h3>Full Stack Developer/Shinobi</h3>
+                </div>
+                <div class="typewriter">
+                  <h1 class="">
+                    adamdevelops
+                  </h1>
+                </div>
+              </div>
+
+              <div class="header-marker col-md-12">
+                  <div id="snap" class="bounce arrow">
+                    <a href="#bio-sec">
+                      <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+
+        <section class="bio-section" id ="bio-sec">
+          <div class="row">
+              <div class="col-md-6 bio">
+                <h2 class="heading">
+                    Learn about my journey as a developer.
+                </h2>
+                <p class="bio-story">
+                  I am full stack developer whose been developing for some years now. Got my first crack at web developing in middle school with basic HTML which eventually evolved into Full Stack development after graduating CityTech college.
+                  Furthered my education with Udacity's Full Stack Nanodegree which lead to me wanting to learn more. Now, I'm developing front end applications with React/Redux as well as Full Stack applications using Python/Django/Flask, HTML/CSS, Javascript, JQuery.
+                </p>
+                <p class="bio-story">
+                  I've always had a curious mind of how things work so Full stack web development fulfills the need of understanding how web application with how data flows on the backend from the front end as well my artistic of crafting beautiful interfaces.
+                  When I am not painting with IDE as my canvas using code, Im most likely playing basketball, learning new skateboard tricks, or adventuring around Queens.
+                </p>
+                  <p class="bio-story">
+                    Below you will find some projects that I am working on for freelancing clients and personal projects.
+                  </p>
+              </div>
+              <div class="col-md-6 headshot-area">
+                <img class="headshot-pic" src="img/headshot.jpg" />
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="col-md-12 bio">
+                  <h2 class="heading">
+                      Here are a few technologies I've been working with:
+                  </h2>
+                  <ul class="skills col-md-12">
+                    <li>HTML5 / CSS3</li>
+                    <li>Javascript ES6</li>
+                    <li>React / Redux</li>
+                    <li>Node JS</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>SQLAlchemy</li>
+                    <li>PostgreSQL</li>
+                    <li>AWS / Heroku</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div id="snap" class="bounce arrow col-md-12">
+                  <a href="#projects">
+                    <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+        </section>
+
+
+
+
+
+			<!-- Carousel of Projects -->
+			<div class="featuredprojects" id="projects">
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <h2 class="heading"><u>Featured Projects</u></h2>
+          </div>
+
+          <!-- Thumbnails of each of the featured work projects -->
+          <section class="school_proj" id="feat_proj-desktop">
+            <div class="row proj-row">
+              <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="proj_prev/trendychic.gif" alt="CityTech Credit Tracker" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1>Trendychic</h1>
+                       <p>
+                         Ecommerce site being built for a client in React/Redux that feautres a fully working item display with the ability to favorite items and add/remove items to cart as well
+                         as the ability to purchase those items that later processed onto order history area on user's Account page. <br /> <b>Note: Project is still in progress, Demo of app is below</b>
+                       </p>
+                       <a class="link" href="http://trendychic.herokuapp.com/">Click here to view the Project</a>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="proj_prev/cct.gif" alt="CityTech Credit Tracker" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1>Credit Tracker</h1>
+                       <p>
+                         CityTech Credit Tracker app is created to make the credit advisement process better and more convienent. This app is able to calculate the best
+                         academic path a student should take for their degree based on previous courses and current course they have taken. This app expands across the various schools/departments
+                         at CityTech.
+                       </p>
+                       <a class="link" href="https://ct-credittracker.herokuapp.com">Click here to view the Project</a>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="proj_prev/covid_dash.gif" alt="Covid Dash" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1></h1>
+                       <p>
+                         Covid Dash is an application created in part due to the recent COVID19 (Coronavirus) pandemic. This is a place where users can find recent news that has came out about the virus to stay updated as well as local news for their area,
+                         recent tweets referencing subject, and helpful tips for safety and prevention.
+                       </p>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row proj-row">
+                <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="img/quiz.jpg" alt="Quizzical quiz app" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1>PyLearn</h1>
+                       <p>
+                         An hybrid mobile web app built with a team at CityTech to be companion to the EMT 1120 course lessons. This an app that has challenge modes to test the user's Python knowledge and help them study for exams. It includes
+                         three modes which are Learning (which provides user feedback and progress), Challenge (quiz mode provides feedback after user fails question),
+                         Ultimate Challenge (quiz mode without feedback and has a timer).
+                       </p>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="img/multi-userblog.jpg" alt="Multi-User Blog" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1>Multi-User Blog</h1>
+                       <p>
+                         The project consists of a multi-user blog where users can sign in to create posts or comment on other posts as well as like other user's posts.
+                         This Multi-user Blog will combine the coding skills of python to execute the front-end actions and GQL (Google's Query Language) to perform saving/exchange of data in the backend.
+                         This site is hosted on Google App Engine and can be accessed <a class="link" href="http://multi-userblog.appspot.com/blog">here</a>
+                       </p>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="proj_prev/nmap.gif" alt="Neighborhood Map" class="card_preview">
+                     </div>
+                     <div class="flip-card-back">
+                       <h1>Neighborhood Map</h1>
+                       <p>
+                         The Neighborhood Map Project is app that displays the recommended locations to visit around an area. My app is centered around the locales in
+                         Downtown Chinatown in Mahattan, NY. This project utilizes the Google Maps API, and third party API of OpenWeather API to provide weather forecast
+                         as well as the Foursquare API to provide location details.
+                       </p>
+                       <a class="link" href="https://adamdevelops.github.io/Neighborhood-Map/">Click here to view the Project</a>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+          <section id="feat_proj-mobile">
+            <div class="col-md-12 project">
+              <a data-toggle="modal" data-target="#creditTracker" href="#"><img class="feat_thumbnail" src="proj_prev/trendychic.gif" alt="CityTech Credit Tracker"></a>
+              <h3 class="project-title">Trendychic</h3>
+            </div>
+              <div class="col-md-12 project">
+                <a data-toggle="modal" data-target="#creditTracker" href="#"><img class="feat_thumbnail" src="proj_prev/cct.gif" alt="CityTech Credit Tracker"></a>
+                <h3 class="project-title">CityTech Credit Tracker</h3>
+              </div>
+              <div class="col-md-12 project">
+                  <a data-toggle="modal" data-target="#neighborhoodMap" href="#"><img class="feat_thumbnail" src="img/Neighborhood-Map.jpg" alt="Neighborhood Map"></a>
+                  <h3 class="project-title">Neighborhood Map</h3>
+                </div>
+                <div class="col-md-12 project">
+                  <a data-toggle="modal" data-target="#multiBlog" href="#"><img class="feat_thumbnail" src="img/multi-userblog.jpg" alt="Multi-User Blog"></a>
+                  <h3 class="project-title">Multi-User Blog</h3>
+                </div>
+                <div class="col-md-12 project">
+                  <a data-toggle="modal" data-target="#progQuiz" href="#"><img class="feat_thumbnail" src="img/progapp_menu.jpg"
+      alt="Pic of the menu of Programming Quiz app which is used to teach students programming"></a>
+                  <h3 class="project-title">PyLearn</h3>
+                </div>
+            </div>
+          </section>
+
+          <div id="snap" class="bounce arrow contact_arrow">
+            <a href="#contact">
+              <i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="contact" id="contact">
+          <button id="contact_button" class="unstyled-button contact-button" data-toggle="modal" data-target="#contactModal" href="#" >Contact</button>
+      </div>
+
+              <!-- Contact me modal  -->
+               <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header contact-modal">
+                              <h4 class="modal-title" id="contactModalLabel">Contact Info</h5>
+                           </div>
+                           <div class="modal-body">
+                             <p>For any queries or project proposals, <br /> Feel free to reach me at:</p>
+                             <p>adamh93@verizon.net</p>
+                             </div>
+                           <div class="modal-footer contact-modal">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+
+
+                  <!-- Social Media Contact Info -->
+
+                  <footer>
+
+                          <i class="fa fa-github fa-2x footer" aria-hidden="true"></i><a class="icon" href="https://github.com/adamdevelops">
+                              GitHub</a>
+                          <i class="fa fa-facebook-square fa-2x footer " aria-hidden="true"></i><a href="https://www.facebook.com/f2dwd">
+                              Facebook</a>
+                          <i class="fa fa-linkedin-square fa-2x footer " aria-hidden="true"></i><a href="https://www.linkedin.com/in/adamdevelops/">LinkedIn</a>
+                          <i class="fa fa-laptop fa-2x footer" aria-hidden="true"></i><a href="http://adamdevelops.blogspot.com/">My Blog</a>
+
+                  </footer>
+
+        <!-- Pop up Modals for each of the Carousel Projects -->
+
+        <!-- CityTech Credit Tracker App Modal -->
+        <div class="modal fade" id="creditTracker" tabindex="-1" role="dialog" aria-labelledby="creditTrackerLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="creditTrackerLabel">CityTech Credit Tracker</h4>
+                    </div>
+                    <div class="modal-body">
+                      CityTech Credit Tracker app is created to make the credit advisement process better and more convienent. This app is able to calculate the best
+                      academic path a student should take for their degree based on previous courses and current course they have taken. This app expands across the various schools/departments
+                      at CityTech. <br>
+                      <a href="https://ct-credittracker.herokuapp.com">Click here to view the Project</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neighborhood Map App Modal -->
+        <div class="modal fade" id="neighborhoodMap" tabindex="-1" role="dialog" aria-labelledby="neighborhoodMapLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="neighborhoodMapLabel">Neighborhood Map</h4>
+                    </div>
+                    <div class="modal-body">
+                      The Neighborhood Map Project is app that displays the recommended locations to visit around an area. My app is centered around the locales in
+                      Downtown Chinatown in Mahattan, NY. This project utilizes the Google Maps API, and third party API of OpenWeather API to provide weather forecast
+                      as well as the Foursquare API to provide location details.<br>
+                      <a href="https://adamdevelops.github.io/Neighborhood-Map/">Click here to view the Project</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item Catalog App Modal -->
+        <div class="modal fade" id="itemCatalog" tabindex="-1" role="dialog" aria-labelledby="itemCatalogLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="itemCatalogLabel">Item Catalog</h4>
+                    </div>
+                    <div class="modal-body">
+                        This app represents an Item Catalog that can be used record items from various different categories.
+                        For my project, I decided to create a Home Movies Catalog to catalog all the movies a person owns.
+                        This app implements CRUD functionality to create, showcase, edit, and delete movies within the database.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tournament Database App Modal -->
+        <div class="modal fade" id="tourData" tabindex="-1" role="dialog" aria-labelledby="tourDataLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="tourDataLabel">Torunament Database</h4>
+                    </div>
+                    <div class="modal-body">
+                        A database schema that is used to store the details of a games matches between players. Then players are ranked and paired up in matches in a tournament using
+                        the Swiss tournament pairing model.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multi-User Blog App Modal -->
+        <div class="modal fade" id="multiBlog" tabindex="-1" role="dialog" aria-labelledby="multiBlogLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="multiBlogLabel">Multi-User Blog</h4>
+                    </div>
+                    <div class="modal-body">
+                        This is a project created through Udacity's Full Stack Nanodegree to have an intro to backend web developement programming.
+                        The project consists of a multi-user blog where users can sign in to create posts or comment on other posts as well as like other user's posts.
+                        This Multi-user Blog will combine the coding skills of python to execute the front-end actions and GQL (Google's Query Language) to perform saving/exchange of data in the backend.
+                        This site is hosted on Google App Engine and can be accessed <a href="http://multi-userblog.appspot.com/blog">here</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio App Modal -->
+        <div class="modal fade" id="portfolioApp" tabindex="-1" role="dialog" aria-labelledby="portfolioAppLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="portfolioAppLabel">Portfolio App</h4>
+                    </div>
+                    <div class="modal-body">
+                        This is a app displays the portfolio of all my previous projects that I have worked on during my tenure at CityTech college as well as
+                        when I was completing my Udacity Full Stack Web Developer Nanodegree.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie Trailers App Modal -->
+        <div class="modal fade" id="movieTrailer" tabindex="-1" role="dialog" aria-labelledby="movieTrailerLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="movieTrailerLabel">Movie Trailer App</h4>
+                    </div>
+                    <div class="modal-body">
+                      This is a generated static web page that vistors can go to browse my favorite movies. Each movie will its movie poster, movie synopsis, and movie trailer once you click on the movie poster.
+                      This program was created using Python and the useful Python library "Fresh Tomatoes".
+                      Fresh Tomatoes creates a static movie page based on the data you input into file when calling the functions that are inside this library.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ReactJS Youtube App Modal -->
+        <div class="modal fade" id="reactYoutube" tabindex="-1" role="dialog" aria-labelledby="reactYoutubeLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="movieTrailerLabel">React JS Youtube</h4>
+                    </div>
+                    <div class="modal-body">
+                      This is a project created while following <a href="https://www.udemy.com/react-redux/">'Modern React with Redux'</a> course by Stephen Grider.
+                       Using the Youtube API, I've created a landing page using multiple components to display a video with a description, a list of recommended videos, and a search bar.
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ReactJS Weather App Modal -->
+        <div class="modal fade" id="reactWeather" tabindex="-1" role="dialog" aria-labelledby="reactWeatherLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title" id="movieTrailerLabel">React JS Weather App</h5>
+                    </div>
+                    <div class="modal-body">
+                      This is a project created in ReactJS that retreives weather using OpenWeatherAPI and React's Fetch API to pull the data.
+                       The user can search for the weather for any given state  which then return an icon representing current weather condition,
+                       the fahrenheit degrees of the weather as well as the description of the current weather condition.
+                       <br /> <br />
+                       You check out the site at the below link: <br />
+                       <a>http://mighty-springs-63542.herokuapp.com/</a>
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+  <!-------------------------------------------------------------------------------------------->
+
+	<!-- Scripts-->
+
+		<!-- Custom JS files -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+		<!-- Social Icons-->
+		<script src="https://use.fontawesome.com/98e874ae7f.js"></script>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/typewriter.js"></script>
+    <!-- <script src="flippingmodal.js"></script> -->
+
+
+    </body>
+</html>
