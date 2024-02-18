@@ -38,8 +38,14 @@ li {
   color: white;
 }
 
+.logo{
+  height: 150px;
+  width: 150px;
+}
+
 .header-area{
   height: 100vh;
+  width: 100vw;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -47,28 +53,20 @@ li {
   font-family: 'Exo 2', sans-serif;
 }
 
-.logo{
-  height: 150px;
-  width: 150px;
-}
-
-.intro{
-
-}
-
 .bio{
-  height: 100vh;
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  height: 100vh;
 }
 
 .bio-story{
   width: 500px;
-  padding-bottom: 30px;
+  height: auto;
+  overflow: hidden;
 }
 
 .bio-story h2{
@@ -78,13 +76,12 @@ li {
 
 
 .skills-box{
-  width: 1200px;
-  height: 500px;
   border-radius: 12px;
   background-color: #FFFFFF;
   /* background-color: #F2F2F2; */
   display: flex;
   flex-direction: column;
+
 }
 
 .skills-box h3{
@@ -99,12 +96,11 @@ li {
 .skills-column{
   width: 200px;
   height: 500px;
+  margin: 0 50px;
   border-right: 1px solid #E6ECF8;
-  flex-grow: 1;
 }
 
 .projects{
-  height: 100vh;
   background-color: #9BC995;
   padding-left: 30px;
   padding-right: 30px;
@@ -120,6 +116,11 @@ li {
 .projects-area{
   justify-content: center;
   align-items: center
+} 
+
+.project{
+  display: flex;
+  justify-content: center;
 }
 
 .contact{
@@ -221,3 +222,59 @@ li {
   border: none;
 }
 
+@media screen and (max-width:1200px) {
+  .projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proj-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width:800px) {
+  .bio{
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  
+  .bio-heading{
+    font-size: 2.3rem;
+  }
+  
+  .bio-story{
+    width: auto;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+  
+  .skills_section{
+    display: none;
+  }
+  
+  .skills-box{
+    width: auto;
+    justify-content: center;
+    overflow-y: scroll;
+    height: auto;
+  }
+  
+  .skills-columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .skills-column{
+    height: auto;
+  }
+}
