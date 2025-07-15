@@ -40,11 +40,13 @@ li {
 
 .header-area{
   height: 100vh;
+  /* background: url("../img/splashscreen.jpg") no-repeat center center; */
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-family: 'Exo 2', sans-serif;
+  /* color: white; */
 }
 
 .logo{
@@ -190,7 +192,7 @@ li {
 }
 
 .flip-card-back i{
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 .flip-card-back a{
